@@ -7,13 +7,11 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
-import java.util.Collections;
-import java.util.List;
 
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients
-public class Application {
+public class LicenseApplication {
 
   @LoadBalanced
   @Bean
@@ -22,6 +20,6 @@ public class Application {
   }
 
   public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(LicenseApplication.class, args);
   }
 }
