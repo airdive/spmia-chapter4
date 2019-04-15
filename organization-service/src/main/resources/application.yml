@@ -1,3 +1,5 @@
+server:
+  port: 8081
 
 eureka:
   instance:
@@ -29,4 +31,4 @@ spring:
     password: p0stgr@s
     testWhileIdle: true
     validationQuery: SELECT 1
-        
+
