@@ -3,10 +3,10 @@ server:
 
 eureka:
   instance:
-    preferIpAddress: true
+    preferIpAddress: true  # 注册服务的是IP，而不是服务名称
   client:
-    registerWithEureka: true
-    fetchRegistry: true
+    registerWithEureka: true # 向Eureka注册服务
+    fetchRegistry: true # Eureka客户端将在本地缓存注册表
     serviceUrl:
         defaultZone: http://localhost:8761/eureka/
 
